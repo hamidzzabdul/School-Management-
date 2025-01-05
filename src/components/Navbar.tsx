@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Navbar = () => {
   return (
-    <div className="flex items-center justify-between p-4">
+    <div className="flex items-center justify-between p-4 sticky top-0 bg-white z-10">
       {/* SEARCH BAR */}
       <div className="hidden md:flex text-xs items-center gap-2 ring-[1.5px] ring-gray-300 rounded-full px-2">
         <Image src={"/search.png"} alt="" width={14} height={14} />

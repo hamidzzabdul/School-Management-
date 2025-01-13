@@ -5,8 +5,6 @@ import Image from "next/image";
 import { JSX, useState } from "react";
 
 // USE LAZY LOADING
-
-import TeacherForm from "./forms/TeacherForm";
 const TeacherForm = dynamic(() => import("./Forms/TeachersForms"), {
   loading: () => <h1>Loading...</h1>,
 });
